@@ -1,4 +1,3 @@
-
 import React from "react";
 
 export default function Contact() {
@@ -26,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative">
+    <section id="contact" className="relative" style={{ backgroundColor: "#6E6D6C" }}>
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
@@ -38,16 +37,16 @@ export default function Contact() {
             marginHeight={0}
             marginWidth={0}
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60861.20128511924!2d120.39244185000001!3d17.563512799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338e6f821753bae5%3A0x20035e6de330b125!2sVigan%20City%2C%20Ilocos%20Sur!5e0!3m2!1sen!2sph!4v1731081789696!5m2!1sen!2sph"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246892.4001519113!2d121.0682267441094!3d14.786272006432759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a248a5715543%3A0x4b286890343782c3!2sRodriguez%2C%20Rizal!5e0!3m2!1sen!2sph!4v1732422830283!5m2!1sen!2sph"
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
+            <div className="lg:w-1/2 px-12">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">
-                Vigan City <br />
-                Ilocos Sur
+              <p className="mt-1 text-white">
+                Rodriguez <br />
+                Rizal
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -55,12 +54,12 @@ export default function Contact() {
                 EMAIL
               </h2>
               <a className="text-indigo-400 leading-relaxed">
-                kvbravo@ceu.edu.ph
+                jewelgrefal.9@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">123-456-7890</p>
+              <p className="leading-relaxed text-white">09206458656</p>
             </div>
           </div>
         </div>
@@ -71,22 +70,21 @@ export default function Contact() {
           method="POST"
           data-netlify="true"
           onSubmit={handleSubmit}
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 font-gothic"
         >
           {/* Hidden input for Netlify form handling */}
           <input type="hidden" name="form-name" value="contact" />
 
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+          <h2 className="text-black sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
-          <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+          <p className="leading-relaxed mb-5 text-black">
+            If you’re looking for a creative, skilled, and reliable designer or developer, I’d love to work with you! Whether it’s building an engaging game, crafting stunning visuals, or developing a responsive website, I’m here to bring your ideas to life. Let’s collaborate and create something amazing together. Reach out to discuss your project!
           </p>
 
           {/* Name Input */}
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="name" className="leading-7 text-sm text-black">
               Name
             </label>
             <input
@@ -102,7 +100,7 @@ export default function Contact() {
 
           {/* Email Input */}
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="email" className="leading-7 text-sm text-black">
               Email
             </label>
             <input
@@ -120,7 +118,7 @@ export default function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-400"
+              className="leading-7 text-sm text-black"
             >
               Message
             </label>
